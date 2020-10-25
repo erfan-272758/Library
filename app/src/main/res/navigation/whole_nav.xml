@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/whole_nav"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.google.library.pages.MainActivity"
+        android:label="MainActivity"
+        tools:layout="@layout/activity_main"
+        />
+    <activity
+        android:id="@+id/bookEditActivity"
+        android:name="com.google.library.pages.BookEditActivity"
+        android:label="BookEditActivity"
+        tools:layout="@layout/book_edit"
+        />
+    <activity
+        android:id="@+id/personActivity"
+        android:name="com.google.library.pages.PersonActivity"
+        android:label="PersonActivity"
+        tools:layout="@layout/activity_main"
+        />
+    <activity
+        android:id="@+id/borrowLandActivity"
+        android:name="com.google.library.pages.BorrowLandActivity"
+        android:label="BorrowLandActivity"
+        tools:layout="@layout/borrow_land"
+        />
+  </navigation>

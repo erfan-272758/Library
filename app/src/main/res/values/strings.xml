@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">کتابخانه</string>
+    <string name="crop_title">اصلاح اندازه</string>
+    <string name="crop_button">برش</string>
+    <string name="result_cancel_crop">برش انجام نشد</string>
+    <string name="video_selected_cancel">از انتخاب فیلم صرف نظر شد</string>
+    <string name="video_long_size">اندازه فیلم از حد استاندارد (16MB) بیشتر است</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_prof">ویرایش پروفایل</string>
+    <string name="new_events">رویدادهای جدید</string>
+    <string name="about_us">درباره ی ما</string>
+    <string name="exit">خروج</string>
+    <string name="des_exit">برای خروج یک بار دیگر فشار دهید</string>
+    <string-array name="draw_layout">
+        <item>لیست کتاب ها</item>
+        <item>افزودن کتاب</item>
+        <item>لیست اعضا</item>
+        <item>اشتراک گذاری کتاب</item>
+    </string-array>
+    <integer-array name="icon_id">
+        <item>@drawable/ic_baseline_library_books_24</item>
+        <item>@drawable/ic_baseline_edit_24</item>
+        <item>@drawable/ic_baseline_supervisor_account_24</item>
+        <item>@drawable/ic_baseline_share_24</item>
+    </integer-array>
+    <string-array name="spinner_type_book">
+        <item>خیلی سبز</item>
+        <item>گاج</item>
+        <item>مهر و ماه</item>
+        <item>مبتکران</item>
+        <item>نشرالگو</item>
+        <item>نشردریافت</item>
+        <item>کانون قلمچی</item>
+        <item>دیگر</item>
+    </string-array>
+    <string-array name="spinner_major">
+        <item>ریاضی فیزیک</item>
+        <item>تجربی</item>
+        <item>انسانی</item>
+        <item>تجربی و ریاضی</item>
+        <item>عمومی</item>
+        <item>کتابچه تخصصی</item>
+        <item>کتابچه عمومی</item>
+    </string-array>
+    <string-array name="spinner_share">
+        <item>یک ماهه</item>
+        <item>دو ماهه</item>
+        <item>سه ماهه</item>
+        <item>شش ماهه</item>
+        <item>نه ماهه</item>
+        <item>یک ساله</item>
+    </string-array>
+</resources>

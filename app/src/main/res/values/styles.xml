@@ -1,0 +1,141 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NoStatus" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="AnimDialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_anim_out</item>
+    </style>
+
+    <style name="DialogStyle" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/AnimDialog</item>
+    </style>
+
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="errorEnabled">true</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+
+    <style name="TextInputStyleEdit" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@null</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="errorEnabled">true</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:layout_marginTop">-7dp</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxCollapsedPaddingTop">-15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="boxBackgroundColor">?android:colorBackground</item>
+        <item name="hintTextAppearance">@style/hintText</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="hintTextColor">@color/colorGray</item>
+    </style>
+    <style name="hintText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="SampleApp.DayNight" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="materialDrawerStyle">@style/Widget.MaterialDrawerStyle</item>
+        <item name="materialDrawerHeaderStyle">@style/Widget.MaterialDrawerHeaderStyle</item>
+    </style>
+
+    <style name="Widget.MaterialDrawerStyleCustom" parent="Widget.MaterialDrawerStyle">
+        <item name="materialDrawerInsetForeground">#4000</item>
+        <!-- MaterialDrawer specific values -->
+        <item name="materialDrawerBackground">?colorSurface</item>
+        <item name="materialDrawerPrimaryText">?android:textColorPrimary</item>
+        <item name="materialDrawerPrimaryIcon">?android:textColorSecondary</item>
+        <item name="materialDrawerSecondaryText">?android:textColorSecondary</item>
+        <item name="materialDrawerSecondaryIcon">?android:textColorSecondary</item>
+        <item name="materialDrawerDividerColor">?android:textColorHint</item>
+        <item name="materialDrawerSelectedBackgroundColor">?colorPrimary</item>
+        <item name="materialDrawerHeaderStyle">@style/Widget.MaterialDrawerHeaderStyle</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:indeterminateTint">@color/colorBlackGray</item>
+        <item name="android:background">@drawable/true_circle</item>
+        <item name="android:translationZ">0.1dp</item>
+        <item name="android:padding">0.75dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="ChipStyle" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:textColor">@color/colorBlackGray</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="iconStartPadding">1dp</item>
+        <item name="chipIconSize">21dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="textToolbarCollapse" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="textToolbarExtended" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/colorBlackGray</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="ChipStyleSelect" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">@color/choice_text</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="chipBackgroundColor">@color/choice_chip</item>
+        <item name="rippleColor">@color/colorWhiteGray</item>
+        <item name="checkedIcon">@null</item>
+    </style>
+
+    <style name="CircleButton" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:layout_width">28.5dp</item>
+        <item name="android:layout_height">28.5dp</item>
+        <item name="iconSize">23.75dp</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:layout_marginTop">-19dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:backgroundTint">?android:colorBackground</item>
+    </style>
+
+    <style name="FollowButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="rippleColor">@color/ripple_white</item>
+        <item name="android:backgroundTint">@color/button_color_blue</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
